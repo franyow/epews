@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import pe.finsur.appws.model.Agencia;
 import pe.finsur.appws.model.Credito;
 import pe.finsur.appws.repository.CreditoJpaRepository;
 
@@ -31,6 +32,26 @@ public class CreditoController {
 		
 		
 		return creditos;
+	}
+	
+	@GetMapping("/getAgencias")
+	public List<Agencia> getAgencias(){
+		List<Agencia> agencias = new ArrayList<>();
+		 agencias.add(new Agencia("Agencia Los Olivos","Av. Angélica Gamarra 131, Los Olivos 15302","(01) 5330814","","","LIMA"));
+	        agencias.add(new Agencia("Agencia José Galvez","Lima 1119, Lima","(01) 2931043","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Manchay","Plaza De Armas, S/N, Lima","(01) 3574645","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Bellavista","Av. Oscar R. Benavides 4742, Bellavista 07006","","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Los Olivos","Av. Angélica Gamarra 131, Los Olivos 15302","(01) 5330814","","","LIMA"));
+	        agencias.add(new Agencia("Agencia José Galvez","Lima 1119, Lima","(01) 2931043","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Manchay","Plaza De Armas, S/N, Lima","(01) 3574645","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Bellavista","Av. Oscar R. Benavides 4742, Bellavista 07006","","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Los Olivos","Av. Angélica Gamarra 131, Los Olivos 15302","(01) 5330814","","","LIMA"));
+	        agencias.add(new Agencia("Agencia José Galvez","Lima 1119, Lima","(01) 2931043","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Manchay","Plaza De Armas, S/N, Lima","(01) 3574645","","","LIMA"));
+	        agencias.add(new Agencia("Agencia Bellavista","Av. Oscar R. Benavides 4742, Bellavista 07006","","","","LIMA"));
+		
+		return agencias;
+		
 	}
 	
 
