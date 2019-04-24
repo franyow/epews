@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Evaluacion {
 	@Id
 	@GeneratedValue
-	String codEvaluacion;
+	String Id;
     String nombreSolicitante;
     String dni;
     String codCredito;

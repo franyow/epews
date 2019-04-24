@@ -3,29 +3,34 @@ package pe.finsur.appws.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 public class Credito {
 	
 	@Id
 	@GeneratedValue
-	String codCredito;
+	Long codCredito;
     String imgCredito;
     String nombreCredito;
     String descripcionCredito;
     
     
-	public Credito(String codCredito, String imgCredito, String nombreCredito, String descripcionCredito) {
+	
+	public Credito() {
+		super();
+	}
+	public Credito(Long codCredito, String imgCredito, String nombreCredito, String descripcionCredito) {
 		super();
 		this.codCredito = codCredito;
 		this.imgCredito = imgCredito;
 		this.nombreCredito = nombreCredito;
 		this.descripcionCredito = descripcionCredito;
 	}
-	public String getCodCredito() {
+	public Long getCodCredito() {
 		return codCredito;
 	}
-	public void setCodCredito(String codCredito) {
+	public void setCodCredito(Long codCredito) {
 		this.codCredito = codCredito;
 	}
 	public String getImgCredito() {
