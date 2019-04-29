@@ -12,6 +12,11 @@ INSERT INTO agencia (COD_AGENCIA, NOMBRE_AGENCIA, DIRECCION_AGENCIA, TELEFONO_AG
 INSERT INTO agencia (COD_AGENCIA, NOMBRE_AGENCIA, DIRECCION_AGENCIA, TELEFONO_AGENCIA,LAT_AGENCIA, LONG_AGENCIA)  VALUES(4,'Ag. San Miguel','AV. LA MARINA 2281 - SAN MIGUEL','252-3351','-12.0768298','-77.0824769');
 
 
+INSERT INTO usuario (COD_USUARIO, username, password, nombre)  VALUES(1,'ecalderon','12345','Enrique Calderón');
+INSERT INTO usuario (COD_USUARIO, username, password, nombre)  VALUES(2,'fperez','12345','Franco Perez');
+
+
+
 
 INSERT INTO DETALLE_CREDITO(ID,BENEFICIOS,COD_CREDITO,REQUISITOS) VALUES (1,'Tasa preferencial del 9%.
 Período de gracia hasta 6 meses, una vez terminado tus estudios.
